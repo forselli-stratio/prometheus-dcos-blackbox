@@ -51,7 +51,7 @@ scrape_configs:
   - job_name: 'external'
     scrape_interval: 10s
     file_sd_configs:
-    - files: ['/etc/prometheus/external_nodes.json']
+    - files: ['/etc/prometheus/external_services.json']
   - job_name: 'blackbox-dns'
     scrape_interval: 60s
     metrics_path: /probe
